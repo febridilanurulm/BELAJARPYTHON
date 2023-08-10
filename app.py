@@ -43,5 +43,9 @@ def delete_task(task_id):
     tasks.remove(task)
     return jsonify({'message': 'Task deleted'})
 
+@app.route('/cobacoba',methods=['GET'])
+def ucok():
+    return tasks
+
 if __name__ == '__main__':
     app.run(debug=True)
